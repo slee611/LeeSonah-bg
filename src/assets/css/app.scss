@@ -1,8 +1,23 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: pink;
+	background-color: white;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-animation-name: hi;
+	-webkit-animation-duration: 5s;
+	animation-name: hi;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes hi {
+	from {background-color: white;}
+	to {background-color: grey;}
+}
+
+@keyframes hi {
+from {background-color: white;}
+to {background-color: grey;}
 }
 
 .nav {
@@ -46,3 +61,4 @@ body {
 	font-size: 20px;
 	line-height: 28px;
 }
+
